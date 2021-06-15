@@ -1,4 +1,4 @@
-import 'package:daily_meals/categories_Item.dart';
+import './categories_Item.dart';
 import 'package:flutter/material.dart';
 import './dummy_data.dart';
 

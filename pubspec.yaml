@@ -28,13 +28,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -59,19 +57,19 @@ flutter:
   fonts:
     - family: Raleway
       fonts:
-        - asset: assets/fonts/Raleway-Regular.ttf
-        - asset: assets/fonts/Raleway-Bold.ttf
+        - asset: assets/fonts/fonts/._Raleway-Regular.ttf
+        - asset: assets/fonts/fonts/._Raleway-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Raleway-Black.ttf
+        - asset: assets/fonts/fonts/._Raleway-Black.ttf
           weight: 900
     - family: RobotoCondensed
       fonts:
-        - asset: assets/fonts/RobotoCondensed-Regular.ttf
-        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+        - asset: assets/fonts/fonts/._RobotoCondensed-Regular.ttf
+        - asset: assets/fonts/fonts/._RobotoCondensed-Bold.ttf
           weight: 700
-        - asset: assets/fonts/RobotoCondensed-Light.ttf
+        - asset: assets/fonts/fonts/._RobotoCondensed-Light.ttf
           weight: 300
-        - asset: assets/fonts/RobotoCondensed-Italic.ttf
+        - asset: assets/fonts/fonts/._RobotoCondensed-Italic.ttf
           style: italic
   #   - family: Trajan Pro
   #     fonts:
