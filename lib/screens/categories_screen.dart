@@ -26,3 +26,4 @@ class CategoriesScreen extends StatelessWidget {
     );
   }
 }
+// Null Safety added!
