@@ -4,6 +4,9 @@ import 'package:flutter_complete_guide/dummy_data.dart';
 class MealDetailScreen extends StatelessWidget {
   // const MealDetailScreen({Key key}) : super(key: key);
   static const routeName = '/meal-detail';
+  final Function toggleFavorite;
+  final Function isFavorite;
+  MealDetailScreen(this.toggleFavorite, this.isFavorite);
 
   // Widget for text = Ingredients
   Widget buildSectionTitle(BuildContext context, String text) {
@@ -69,7 +72,7 @@ class MealDetailScreen extends StatelessWidget {
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Column(
-                  children: [
+                  children: <Widget>[
                     ListTile(
                       leading: CircleAvatar(
                         child: Text('# ${(index + 1)}'),
@@ -87,6 +90,16 @@ class MealDetailScreen extends StatelessWidget {
           ],
           // child: Text('The meal! - $mealId!'),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          // Icons.delete,
+          isFavorite(mealId) ? Icons.star : Icons.star_border,
+        ),
+        onPressed: () {
+          // Navigator.of(context).pop(mealId);
+          toggleFavorite(mealId);
+        },
       ),
     );
   }
